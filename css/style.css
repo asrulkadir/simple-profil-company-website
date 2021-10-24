@@ -1,0 +1,89 @@
+.jumbotron {
+   width: 100%;
+   height: 80vh;
+   background-image: url("../img/Gambar-min.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.25));
+    position: absolute;
+    bottom: 0;
+}
+
+.overlay {
+    width: 50%;
+    height: 75vh;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.overlay h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 40px;
+    padding-top: 175px;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.carousel-inner {
+    height: auto;
+}
+
+.carousel-item {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.img-thumbnail {
+    width: 100px;
+}
+
+.carousel-sub {
+    width: 70%;
+    margin: auto;
+}
+
+.comment {
+    width: 50%;
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.footer {
+    margin-top: 40px;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .overlay {
+        width: 75%;
+        height: 75vh;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+    .overlay h1 {
+        margin: 0;
+        color: #fff;
+        font-size: 30px;
+        padding-top: 125px;
+        text-shadow: 2px 2px 8px #000;
+    }
+    .comment {
+        width: 90%;
+    }
+  }
